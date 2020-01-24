@@ -1,0 +1,1096 @@
+@import url('font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700&subset=latin-ext');
+
+html
+{
+	box-sizing: border-box;
+	font-family: Raleway, sans-serif;
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+body
+{
+	height: 100%;
+	margin: 0;
+}
+
+header
+{
+	background-color: #333;
+	background-image: linear-gradient(to top, rgba(255, 255, 255, .75) 25%, rgba(255, 25, 255, 0) 100%), url('../images/banner.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+header h1:after
+{
+	background-color: rgba(0, 0, 0, .25);
+	content: '';
+	display: block;
+	height: 1000px;
+	left: 0;
+	position: absolute;
+	top: -300px;
+	transform: rotate(-30deg);
+	width: 500px;
+	z-index: -1;
+}
+
+header h1
+{
+	bottom: 0;
+	left: 10px;
+	margin: 0;
+	position: absolute;
+	vertical-align: middle;
+	width: 600px;
+	z-index: 1;
+}
+
+header h1 a
+{
+	color: #FFF;
+	font-size: 50px;
+	font-weight: 400;
+	outline: 0;
+	padding-top: 200px;
+	text-decoration: none;
+	text-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+}
+
+header h1 a:hover
+{
+	color: #FF9;
+}
+
+header h1 a i
+{
+	color: #FFF !important;
+	opacity: .5;
+}
+
+header div#sheet_counter
+{
+	background-color: rgba(255, 255, 255, .75);
+	border-top-left-radius: 40px;
+	color: #999;
+	cursor: default;
+	display: inline-block;
+	font-size: 26px;
+	font-weight: 100;
+	padding: 10px 35px 10px 50px;
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+}
+
+header div#sheet_counter strong
+{
+	color: #966;
+	font-family: Verdana, sans-serif;
+	font-weight: 400;
+}
+
+header a#show_menu
+{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 10px;
+	color: #FFF;
+	cursor: pointer;
+	display: none;
+	font-size: 20px;
+	left: 15px;
+	outline: 0;
+	padding: 15px;
+	position: fixed;
+	text-align: center;
+	top: 15px;
+	width: 75px;
+	z-index: 1000;
+}
+
+header #show_menu:hover
+{
+	background-color: rgba(0, 0, 0, .75);
+}
+
+nav#main
+{
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .75) 15%);
+	cursor: default;
+	height: 50px;
+	padding: 0 10px 0 100px;
+	position: absolute;
+	right: 0;
+	top: calc(200px - 50px);
+}
+
+nav#main a
+{
+	color: #333;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 300;
+	height: 50px;
+	margin: 0 20px;
+	padding: 20px 10px 5px;
+	text-decoration: none;
+}
+
+nav#main a:hover
+{
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 100%);
+	color: #000;
+}
+
+nav#main a:hover i
+{
+	color: #C66;
+}
+
+nav#main a i
+{
+	color: #6CF;
+	margin-right: 10px;
+}
+
+#flex_container
+{
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+}
+
+main
+{
+	background-color: #F9F9F9;
+	border-bottom: 30px solid #933;
+	border-right: 10px solid #C66;
+	box-shadow: 0 0 25px rgba(0, 0, 0, .2) inset;
+	color: #666;
+	flex-grow: 1;
+	order: 2;
+	overflow-x: hidden;
+	padding: 25px;
+}
+
+main a
+{
+	color: #C00;
+	text-decoration: none;
+}
+
+main a:hover
+{
+	color: #666;
+}
+
+main a.box
+{
+	background-color: #F9F9F9;
+	border: 1px solid #DDD;
+	border-radius: 10px;
+	color: #666;
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 100;
+	margin: 20px 20px 20px 0;
+	padding: 20px;
+}
+
+main a.box:hover
+{
+	background-color: #FFF;
+	border-width: 3px;
+	padding: 18px;
+}
+
+main h2
+{
+	background-color: #FFF;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+	border-bottom: 2px solid #6CF;
+	font-size: 40px;
+	font-weight: 200;
+	margin: 0;
+	overflow-wrap: break-word;
+	padding: 20px 20px 5px 20px;
+}
+
+main h2.arranger
+{
+	border-width: 0;
+	color: #666;
+	font-size: 70px;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 40px;
+	text-align: center;
+}
+
+main h2.arranger span
+{
+	color: #999;
+	display: block;
+	font-size: 50px;
+	font-weight: 100;
+}
+
+main h3
+{
+	border-bottom: 1px solid #DDD;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+main hr.spacer
+{
+	border-color: rgba(255, 255, 255, 0);
+	margin: 20px 0;
+}
+
+div.article h2, div.content h2
+{
+	padding-right: 200px;
+}
+
+main h2 + time
+{
+	color: #999;
+	float: right;
+	font-size: 20px;
+	line-height: 0;
+	right: 20px;
+	position: relative;
+	top: -35px;
+}
+
+div.article div, div.content div
+{
+	background-color: #FFF;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+div.article span.author
+{
+	color: #999;
+	display: block;
+	font-size: 12px;
+	margin-bottom: 30px;
+	margin-top: -10px;
+	text-align: right;
+}
+
+div.article span.author a
+{
+	color: #C66;
+}
+
+div.article span.author a:hover
+{
+	color: #000;
+}
+
+div.article div footer
+{
+	border-top: 1px solid #EEE;
+	font-size: 0;
+	padding: 20px 20px 0;
+	margin: 40px -20px 0;
+}
+
+div.article div footer a
+{
+	color: #666;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+div.article div footer a:hover
+{
+	color: #C00;
+}
+
+div.article div footer a:first-child
+{
+	border-right: 1px solid #CCC;
+	padding-left: 0;
+	padding-right: 20px;
+}
+
+div.article div footer a i
+{
+	margin-right: 10px;
+}
+
+div.article div footer a:hover i
+{
+	color: #000;
+}
+
+main div.game div.sorting
+{
+	font-size: 0;
+	padding-bottom: 2px;
+	overflow: hidden;
+	text-align: right;
+}
+
+main div.game div.sorting span
+{
+	color: #999;
+	cursor: default;
+	font-size: 16px;
+	margin: 0 5px 0 20px;
+}
+
+main div.game div.sorting a
+{
+	color: #999;
+	font-size: 20px;
+	padding: 5px 0 5px 5px;
+}
+
+main div.game div.sorting a:hover
+{
+	color: #CCC;
+}
+
+main div.game div.sorting a.active
+{
+	color: #6CF;
+}
+
+main div.game div.sorting a.active:hover
+{
+	color: #CCC;
+}
+
+main div.game table
+{
+	border-collapse: collapse;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+main div.game table tr
+{
+	background-color: #FFF;
+	border-bottom: 1px solid #EEE;
+}
+
+main div.game table tr:hover
+{
+	background-color: #EEE;
+}
+
+main div.game table tr:hover .download a
+{
+	border: 2px solid #DDD;
+}
+
+main div.game table tr td
+{
+	font-size: 20px;
+	padding: 10px;
+}
+
+main div.game table tr td.popularity
+{
+	color: #EEE;
+	font-size: 16px;
+	padding-left: 25px;
+	width: 0;
+}
+
+main div.game table tr td.popularity.level9
+{
+	color: #FC6;
+}
+
+main div.game table tr td.popularity.level8
+{
+	color: #999;
+}
+
+main div.game table tr td.popularity.level7
+{
+	color: #963;
+}
+
+main div.game table tr td.title
+{
+	padding-left: 20px;
+	width: calc(70% - 40px - 210px);
+}
+
+main div.game table tr td.title span.download_count
+{
+	color: #BBB;
+	display: block;
+	font-size: 12px;
+	line-height: 8px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+}
+
+main div.game table tr td.title .arranger, main div.game table tr td.title .arrangers
+{
+	display: none;
+}
+
+main div.game table tr td.arranger
+{
+	color: #999;
+	font-size: 15px;
+	font-style: italic;
+	overflow: hidden;
+	padding-left: 30px;
+	position: relative;
+	white-space: nowrap;
+	width: 30%;
+}
+
+main div.game table tr td.arranger a:before
+{
+	content: '';
+	display: block;
+}
+
+main div.game table tr td.arranger a
+{
+	color: #666;
+}
+
+main div.game table tr td.arranger a:hover
+{
+	color: #C00;
+}
+
+main div.game table tr td.arranger i
+{
+	color: #999;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+}
+
+main div.game table tr td.arranger span.arrangers
+{
+	color: #666;
+	cursor: default;
+}
+
+main div.game table tr td.arranger a:hover i, main div.game table tr td.arranger span.arrangers:hover i
+{
+	color: #666;
+}
+
+main div.game table tr td.download
+{
+	padding: 0;
+	text-align: center;
+	width: 75px;
+}
+
+main div.game table tr td.download a
+{
+	background-color: #FFF;
+	border: 2px solid #EEE;
+	color: #666;
+	display: block;
+	font-size: 16px;
+	padding: 15px 5px;
+	margin: 2px 2px 2px 0;
+}
+
+main div.game table tr td.download a i
+{
+	opacity: .5;
+}
+
+main div.game table tr td.download a:hover
+{
+	background-color: #FFF;
+	border-color: #C33;
+	color: #C33;
+}
+
+main div.game table tr td.download:last-child
+{
+	border-right: 2px solid #F9F9F9;
+}
+
+main div.game table tr td.download a:hover i
+{
+	opacity: 1;
+}
+
+nav#sidebar
+{
+	background-color: #A99;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 255) 1500px);
+	border-bottom: 30px solid #C66;
+	order: 1;
+	padding: 0;
+	flex-basis: 467px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+nav#sidebar ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+nav#sidebar ul li
+{
+	background-size: cover;
+	display: block;
+	margin-bottom: 5px;
+	width: calc(100% - 5px);
+}
+
+nav#sidebar ul li a
+{
+	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, .9) 45%, rgba(255, 255, 255, .9) 100%);
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, .9) 45%, rgba(255, 255, 255, .9) 100%);
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, .9) 45%, rgba(255, 255, 255, .9) 100%);
+	color: #39F;
+	display: block;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 500;
+	height: 80px;
+	padding: 25px 25px 0 0;
+	text-align: right;
+	text-decoration: none;
+	text-shadow: 0 0 5px #FFF, 5px 5px 5px #FFF, 0 5px 5px #FFF, 5px 0 5px #FFF, -5px 0 5px #FFF, 0 -5px 5px #FFF, -5px 5px 5px #FFF, 5px -5px 5px #FFF, -5px -5px 5px #FFF;
+}
+
+nav#sidebar ul li a:hover
+{
+	box-shadow: 0 0 20px rgba(0, 0, 0, .25) inset;
+	border-right: #C33 solid 5px;
+	color: #000;
+	margin-right: -5px;
+}
+
+nav#sidebar ul li:first-child, nav#sidebar ul li:first-child a
+{
+	border-top-right-radius: 5px;
+}
+
+nav#sidebar ul li:first-child a:hover
+{
+	border-top-right-radius: 10px;
+}
+
+nav#sidebar footer
+{
+	color: #999;
+	font-size: 20px;
+	margin: 60px 20px;
+	text-align: center;
+}
+
+nav#sidebar footer span#sheet_counter_bottom
+{
+	display: none;
+}
+
+nav#sidebar footer big
+{
+	font-size: 26px;
+	font-weight: bold;
+}
+
+nav#sidebar div#social
+{
+	font-size: 0;
+}
+
+nav#sidebar div#social a
+{
+	color: #CCC;
+	font-size: 30px;
+	outline: 0;
+	padding: 15px;
+}
+
+nav#sidebar div#social a:hover.facebook
+{
+	color: #3B5998;
+}
+
+nav#sidebar div#social a:hover.twitter
+{
+	color: #0084B4;
+}
+
+nav#sidebar div#social a:hover.youtube
+{
+	color: #CC181E;
+}
+
+small.copyright
+{
+	display: block;
+	font-size: 12px;
+	margin-top: 100px;
+}
+
+small.copyright a
+{
+	color: #C66;
+	text-decoration: none;
+}
+
+small.copyright a:hover
+{
+	color: #C00;
+}
+
+/* LET'S MOBILE FRIENDLIFY THIS THING! */
+@media screen and (max-width: 1366px)
+{
+	header h1:after
+	{
+		width: 351px;
+	}
+
+	header h1
+	{
+		bottom: 5px;
+		width: 400px;
+	}
+
+	header h1 a
+	{
+		font-size: 36px;
+		font-weight: 500;
+	}
+
+	header h1 a i
+	{
+		color: #000 !important;
+		margin-left: 30px;
+	}
+
+	nav#main a.home
+	{
+		display: none;
+	}
+
+	nav#sidebar
+	{
+		flex-basis: 300px;
+	}
+
+	nav#sidebar ul li a
+	{
+		font-size: 20px;
+		height: 60px;
+		padding: 20px 20px 0 0;
+	}
+
+	nav#sidebar footer big:before
+	{
+		content: "\A";
+		white-space: pre;
+	}
+
+	main h2.arranger
+	{
+		font-size: 60px;
+	}
+
+	main h2.arranger span
+	{
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 1100px)
+{
+	header div#sheet_counter
+	{
+		padding-right: 15px;
+	}
+
+	nav#main a
+	{
+		margin: 0;
+	}
+
+	main h2.arranger
+	{
+		font-size: 50px;
+	}
+
+	main h2.arranger span
+	{
+		font-size: 30px;
+	}
+
+	main div.game table tr td.title
+	{
+		width: calc(70% - 40px - 180px);
+	}
+
+	main div.game table tr td.download
+	{
+		width: 60px;
+	}
+
+	main div.game table tr td.download a i
+	{
+		display: none;
+	}
+
+	main div.game table tr td.arranger i, main div.game table tr td.download a i
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 980px)
+{
+	header h1:after
+	{
+		width: 450px;
+	}
+
+	header h1 a
+	{
+		font-size: 40px;
+	}
+
+	header
+	{
+		margin-bottom: 50px;
+	}
+
+	header div#sheet_counter
+	{
+		background-color: rgba(255, 255, 255, .5);
+		bottom: 0;
+		font-size: 20px;
+	}
+
+	header a#show_menu
+	{
+		animation: fadeIn 1s;
+		display: inline-block;
+	}
+
+	@keyframes fadeIn
+	{
+		from
+		{ opacity: 0; }
+		to
+		{ opacity: 1; }
+	}
+
+	nav#main
+	{
+		display: block;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		top: 200px;
+	}
+
+	nav#main a
+	{
+		background-color: #F9F9F9;
+		border-bottom: 1px solid #CCC;
+		border-right: 1px solid #CCC;
+		display: block;
+		float: left;
+		padding: 15px 40px;
+		text-align: center;
+		width: 50%;
+	}
+
+	nav#main a i
+	{
+		display: none;
+	}
+
+	#flex_container
+	{
+		flex-flow: column nowrap;
+		width: 100%;
+	}
+
+	main
+	{
+		border-bottom-width: 0;
+		border-left: 10px solid #C66;
+		padding-top: 70px;
+		order: 1;
+	}
+
+	main h2:not(.arranger)
+	{
+		font-size: 30px;
+		padding: 20px !important;
+	}
+
+	main h2 + time
+	{
+		background-color: #FFF;
+		border-bottom: 2px solid #9CF;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+		display: block;
+		float: none;
+		padding: 20px !important;
+		position: static;
+	}
+
+	main div.article div footer
+	{
+		text-align: center;
+	}
+
+	main div.game div.sorting
+	{
+		display: none;
+	}
+
+	main div.game table tr td.title
+	{
+		font-size: 16px !important;
+	}
+
+	main div.game table tr td.arranger a
+	{
+		color: #999;
+	}
+
+	main div.game table tr td.arranger i
+	{
+		display: inline;
+	}
+
+	main div.game table tr td.arranger a:hover
+	{
+		color: #C00;
+	}
+
+	main div.game table tr td.download
+	{
+		background-color: transparent;
+		width: 40px;
+	}
+
+	main div.game table tr td.download a
+	{
+		background-color: #FFF;
+		border: 1px solid #EEE;
+		border-radius: 5px !important;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 10px 0;
+		text-align: center;
+		width: calc(100% - 5px);
+	}
+
+	main div.game table tr td.download a:hover
+	{
+		border: 1px solid #C00;
+	}
+
+	nav#sidebar
+	{
+		flex-basis: 100%;
+		order: 2;
+	}
+
+	nav#sidebar ul li
+	{
+		width: 100%;
+	}
+
+	nav#sidebar ul li:first-child a
+	{
+		border-top-right-radius: 0 !important;
+	}
+
+	nav#sidebar ul li a
+	{
+		font-size: 30px;
+		height: 80px;
+		padding: 25px 25px 0;
+		text-align: center;
+	}
+
+	nav#sidebar ul li a:hover
+	{
+		border-left: 5px solid #900;
+		border-right: 5px solid #900;
+		margin-right: 0;
+	}
+
+	nav#sidebar footer big:before
+	{
+		content: "";
+	}
+
+	nav#sidebar footer small
+	{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 700px)
+{
+	header div#sheet_counter
+	{
+		display: none;
+	}
+
+	nav#main a.browse span
+	{
+		display: none;
+	}
+
+	nav#sidebar footer span#sheet_counter_bottom
+	{
+		display: block;
+		margin-bottom: 40px;
+	}
+
+	main h2.arranger
+	{
+		font-size: 40px;
+	}
+
+	main h2.arranger span
+	{
+		font-size: 30px;
+	}
+
+	main a.box
+	{
+		display: block;
+		width: 100%;
+	}
+
+	main div.game table tr td.arranger
+	{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+	html
+	{
+		min-width: 360px;
+	}
+
+	header
+	{
+		overflow: hidden;
+	}
+
+	header h1
+	{
+		width: 100%;
+	}
+
+	header h1 a
+	{
+		font-size: 36px;
+		padding-bottom: 20px;
+		white-space: nowrap;
+	}
+
+	header h1 a i
+	{
+		margin-left: 0;
+	}
+
+	nav#main
+	{
+		min-width: 360px;
+	}
+
+	main
+	{
+		border-width: 0;
+		padding: 50px 0 0 0;
+	}
+
+	main h2.arranger
+	{
+		font-size: 30px;
+	}
+
+	main h2.arranger span
+	{
+		font-size: 20px;
+	}
+
+	main div.game table tr td.title span.download_count
+	{
+		display: none;
+	}
+
+	main div.game table tr td.title .arranger, main div.game table tr td.title span.arrangers
+	{
+		color: #999;
+		display: block;
+		font-size: 12px;
+		line-height: 15px;
+		margin-top: -20px;
+		padding-top: 20px;
+		position: relative;
+	}
+
+	main div.game table tr td.title .arranger, main div.game table tr td.title span.arrangers a
+	{
+		color: #BBB;
+	}
+
+	main div.game table tr td.title span.arranger
+	{
+		cursor: text;
+	}
+
+	main div.game table tr td.title a.arranger:hover, main div.game table tr td.title span.arrangers a:hover
+	{
+		color: #C66;
+	}
+
+	main div.game table tr td.arranger
+	{
+		display: none;
+	}
+
+	nav#sidebar footer big:before
+	{
+		content: "\A";
+		white-space: pre;
+	}
+}
